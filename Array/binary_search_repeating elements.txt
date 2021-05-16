@@ -1,0 +1,53 @@
+/*
+ * Binary Search
+ * Author: suzol
+ * Description:Leetcode_34
+ * Date:2021/05/16
+ * Note:有序(升序)、有重复元素、区间定义为循环不变量
+ * */
+
+#include <iostream>
+#include <vector>
+using namespace std;
+
+/*
+ * @summary Binary search keeps loop invariants
+ * @author suzol
+ * @version 1.0
+ * @description:Close left and Close right for Ascending
+ * @date:2021/05/16
+ * */
+class Solution {
+public:
+    vector<int> searchRange(vector<int>& nums, int target);
+};
+
+vector<int > Solution::searchRange(vector<int>& nums, int target) {
+    vector<int > ret(2);
+    int left = 0;
+    int right = nums.size()-1;
+    // To be written
+
+}
+
+int main() {
+    vector<int > index(2);
+
+    vector<int > nums;
+    nums.push_back(5);
+    nums.push_back(6);
+    nums.push_back(6);
+    nums.push_back(8);
+    nums.push_back(8);
+    nums.push_back(8);
+    nums.push_back(15);
+
+    Solution s;
+
+    index = s.searchRange(nums,18);
+    cout<<"close_index = "<< index<<endl;
+
+    index = s.searchRange(nums,0);
+    cout<<"open_index = "<< index<<endl;
+
+}
